@@ -3,12 +3,10 @@ package codecheck;
 public class App {
 	public static void main(String[] args) {
 		for (int i = 0, l = args.length; i < l; i++) {
-			// 入力を空白で分割
-			String[] strs = args[i].split(" ");
-			int daysInYear = Integer.parseInt(strs[0]);
-			int daysInMonth = Integer.parseInt(strs[1]);
-			int daysInWeek = Integer.parseInt(strs[2]);
-			String date = strs[3];
+			int daysInYear = Integer.parseInt(args[0]);
+			int daysInMonth = Integer.parseInt(args[1]);
+			int daysInWeek = Integer.parseInt(args[2]);
+			String date = args[3];
 			System.out.println(calend(daysInYear, daysInMonth, daysInWeek, date));
 		}
 	}
