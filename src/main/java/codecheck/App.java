@@ -47,6 +47,8 @@ public class App {
 			count += (year - 1) * daysInYear;
 			count += (month - 1) * daysInMonth;
 			count += day;
+			if (year != 1)
+				count++;
 			int youbi = count % daysInWeek;
 			if (youbi == 0)
 				return youbis[daysInWeek];
