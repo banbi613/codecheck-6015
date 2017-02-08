@@ -1,5 +1,3 @@
-build:
-- mvn package
 env:
-  APP_COMMAND: target/bin/theapp
+  APP_COMMAND: node index.js
 test: mocha
