@@ -34,7 +34,7 @@ public class App {
 
 		remainder += remPerYear;
 
-		// 閏年
+		// 閏月		
 		if (remainder >= daysInMonth)
 			monthsInYear++;
 
@@ -50,10 +50,10 @@ public class App {
 			// 何番目の曜日か計算
 			int num = daysElapsed % daysInWeek;
 
-			if (num-1 == 0)
+			if (num == 0)
 				return dayOfTheWeek[daysInWeek];
 			else
-				return dayOfTheWeek[num-1];
+				return dayOfTheWeek[num];
 		} else {
 			return "-1";
 		}
