@@ -42,18 +42,18 @@ public class App {
 			// 曜日の配列を生成
 			String[] dayOfTheWeek = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
-			int daysElapsed = 0;
+			int daysElapsed = 1;
 			daysElapsed += (year - 1) * daysInYear;
 			daysElapsed += (month - 1) * daysInMonth;
-			daysElapsed += day;
+			daysElapsed += day-1;
 			
 			// 何番目の曜日か計算
 			int num = daysElapsed % daysInWeek;
 
-			if (num == 0)
+			if (num-1 == 0)
 				return dayOfTheWeek[daysInWeek];
 			else
-				return dayOfTheWeek[num];
+				return dayOfTheWeek[num-1];
 		} else {
 			return "-1";
 		}
