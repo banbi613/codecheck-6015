@@ -17,10 +17,6 @@ public class App {
 		int month = Integer.parseInt(date.substring(5, 7));
 		int day = Integer.parseInt(date.substring(8, 10));
 
-		// 日が一週間の日数を越えている
-		if (day > daysInWeek)
-			return "-1";
-		
 		// 日が一カ月の日数を越えている
 		if (day > daysInMonth)
 			return "-1";
